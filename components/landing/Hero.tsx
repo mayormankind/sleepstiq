@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import Header from './Header';
+import Image from 'next/image'
 import Sponsors from './Sponsors';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -30,7 +31,8 @@ export default function Hero(){
     <div className='w-full h-full min-h-screen'>
         <Header page={'Home'}/>
         <div className='w-full h-full relative grid'>
-            <img src="/hero.png" alt="" className='w-full h-full absolute top-0 left-0 object-cover'/>            
+            <Image src={'/hero.png'} alt='hero background' layout='fill' objectFit='cover' className='w-full h-full absolute top-0 left-0'/>
+            {/* <img src="/hero.png" alt="" className='w-full h-full absolute top-0 left-0 object-cover'/>             */}
             <div className="w-full max-w-4xl mx-auto p-4 lg:p-0">
                 <div className="flex w-full h-screen">
                     <div className="flex z-10 flex-col gap-6 h-fit text-[#12305B] my-auto items-start text-sm w-full md:w-1/2">

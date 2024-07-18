@@ -1,7 +1,6 @@
 "use client"
 
 import Homepage from "@/sections/Homepage";
-import Image from "next/image";
 
 export default function Home() {
   return (

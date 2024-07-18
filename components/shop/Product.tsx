@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { FaArrowDown, FaArrowUp } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function Product() {
 
@@ -21,7 +23,7 @@ export default function Product() {
     <div className='w-full max-w-4xl px-4 py-8 md:py-16 text-blueShade md:px-0 mx-auto'>
         <div className='flex flex-col items-center md:flex-row'>
             <div className='w-full'>
-                <img src='/product.png' alt='SleepStiq Melatonin' className='w-full h-full'/>
+                <Image src='/product.png' alt='SleepStiq Melatonin' layout='responsive' width={500} height={500} className='w-full h-full'/>
             </div>
             <div className='grid gap-6 w-full p-8 md:p-16'>
                 <h2 className='font-bold text-lg md:text-xl mb-4'>About Product</h2>
@@ -37,16 +39,18 @@ export default function Product() {
                         <p className='font-semibold'>Price</p>
                         <span>USD ${price}.00</span>
                     </div>
-                    <div>
+                    <div>                        
                         <p className='font-semibold'>Unit</p>
                         <div className='flex gap-4 items-center border border-black p-2 justify-between'>
-                            <button className='w-4 h-4' onClick={handleDecrease}>*</button>
+                            <button className='w-4 h-4 bg-gray-200 hover:bg-gray-300 rounded-full' onClick={handleDecrease}><FaArrowDown/></button>
                             <span>{unit}</span>
-                            <button className='w-4 h-4' onClick={handleIncrease}>^</button>
+                            <button className='w-4 h-4 bg-gray-200 hover:bg-gray-300 rounded-full' onClick={handleIncrease}><FaArrowUp/></button>
                         </div>
                     </div>
                 </div>
-                <button className='bg-pinkShade p-3 w-1/2 md:w-1/3 font-semibold text-white rounded-md'>Buy</button>
+                <Link href='www.flutterwave.com'>
+                    <button className='bg-pinkShade p-3 w-1/2 md:w-1/3 font-semibold text-white rounded-md'>Buy</button>
+                </Link>
             </div>
         </div>
     </div>

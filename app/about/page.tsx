@@ -1,5 +1,8 @@
+"use client"
+
 import React from 'react'
 import Slider from 'react-slick';
+import Image from 'next/image';
 import Header from '@/components/landing/Header'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";

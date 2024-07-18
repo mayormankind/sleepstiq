@@ -18,8 +18,8 @@ export default function Services() {
       }
 
   return (
-    <div className='flex flex-col items-center mx-auto w-full max-w-4xl py-6 md:py-16 md:flex-row'>
-        <div className="flex flex-col gap-4 w-full pr-5 md:p-10 text-sm md:w-1/2">
+    <div className='flex flex-col items-center mx-auto w-full max-w-4xl py-16 md:flex-row'>
+        <div className="flex flex-col gap-4 w-full p-5 md:pr-10 text-sm md:w-1/2">
             <span>Our Amazing Story</span>
             <h2 className='text-xl font-bold'>10K+ Happy Customers</h2>
             <p>There’s no secret sauce, no wizard behind the curtain. What makes Aerolab tick is an interdisciplinary team with a framework that fosters candid collaboration.</p> 
@@ -27,7 +27,7 @@ export default function Services() {
         <div className='w-full h-full p-5 shadow-custom md:p-10 md:w-1/2'>
             <Slider {...settings} className='flex gap-4'>
                 {reviews.map((review, index) => (
-                    <div key={index} className='p-2 h-full'>
+                    <div key={index} className='p-2 h-full bg-yellowShade'>
                         <CustomerCard review={review.review} author={review.author} img={review.img} role={review.role}/>
                     </div>
                 ))}

@@ -1,17 +1,15 @@
 import Hero from '@/components/landing/Hero'
-import Sponsors from '@/components/landing/Sponsors'
 import Mission from '@/components/landing/Mission'
 import Services from '@/components/landing/Services'
 import Visit from '@/components/shop/Visit'
 import Review from '@/components/common/Review'
-import Image from 'next/image'
 import React from 'react'
 
 export default function Homepage() {
 
     
   return (
-    <div className="flex flex-col relative text-blueShade">
+    <div className="flex flex-col relative text-blueShade overflow-hidden">
         <div>
             <Hero/>
         </div>

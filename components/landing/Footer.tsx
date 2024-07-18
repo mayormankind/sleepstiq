@@ -24,7 +24,6 @@ export default function Footer() {
         <div className="flex flex-col gap-10 max-w-6xl mx-auto p-4 md:p-8">
             <Image alt='SleepStiq logo' src={'/logo.png'} width={100} height={100} className='mx-auto'/>
             <div className="flex flex-col gap-4 md:flex-row md:gap-8">
-                {/* <div className="flex flex-col gap-4 w-fit p-4"> */}
                 <div className="mb-8 md:mb-0">
                     <h2 className="font-semibold text-white mb-4">COMPANY</h2>
                     <ul className='space-y-2 text-[#ABABAB]'>
@@ -42,7 +41,6 @@ export default function Footer() {
                         <li className='text-white hover:border-b-2 border-white'>16, Ogindipe Close, Upston  Close</li>
                     </ul>
                 </div>
-                {/* <div className="flex flex-col gap-4 text-white text-base p-4"> */}
                 <div className="mb-8 md:mb-0">
                     <h2 className="font-semibold text-white mb-4">CONSUMER ADVISORY</h2>
                     <p className="text-sm">

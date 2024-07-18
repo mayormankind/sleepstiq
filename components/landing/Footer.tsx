@@ -57,7 +57,9 @@ export default function Footer() {
                         <li className='text-white font-bold text-xl'><a href="mailto:info.webovio@gmail.com">hello@sleepstiq.com</a></li>
                         <div className="flex gap-4 items-center">
                             {Contacts.map((contact,id)=>(
-                                <Link key={id} href={contact.ref}><img src={contact.img} alt={contact.alt} className='w-6 h-6'/></Link>
+                                <Link key={id} href={contact.ref}>
+                                    <Image src={contact.img} width={6} height={6} alt={contact.alt} className='w-6 h-6/>
+                                </Link>
                             ))}
                         </div>
                     </ul>

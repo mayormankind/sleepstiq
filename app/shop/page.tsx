@@ -7,6 +7,7 @@ import Product from '@/components/shop/Product'
 import Review from '@/components/common/Review'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Image from 'next/image';
 
 export default function Shop() {
   const images = [
@@ -33,7 +34,7 @@ export default function Shop() {
   <div className='w-full h-full min-h-screen overflow-hidden'>
     <Header page={'Shop'}/>
     <div className='w-full h-full relative grid'>
-      <img src="/shopHero.png" alt="" className='w-full h-full absolute top-0 left-0 object-cover'/>            
+      <Image src={'/shopHero.png'} alt='hero background' layout='fill' objectFit='cover' className='w-full h-full absolute top-0 left-0'/>       
       <div className="w-full max-w-4xl mx-auto p-4 lg:p-0">
         <div className="flex w-full min-h-[600px]">
           <div className="flex z-10 flex-col gap-6 h-fit text-[#12305B] my-auto items-start text-sm w-full md:w-1/2">

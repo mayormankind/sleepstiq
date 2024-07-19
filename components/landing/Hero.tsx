@@ -40,7 +40,7 @@ export default function Hero(){
                         <p className="text-sm">We are here to help you</p>
                         <h2 className='font-bold text-2xl md:text-3xl'>Relax & Rest</h2>
                         <span className=''>With the aid of our Melatonin Sleepstiq, we can assure you that you can get quality sleep.</span>
-                        <button className='bg-pinkShade p-3 w-1/4 font-semibold text-white rounded-md'>
+                        <button className='bg-pinkShade p-3 w-2/4 lg:w-1/4 font-semibold text-white rounded-md'>
                                <Link href='/shop'>Visit shop</Link>
                         </button>
                     </div>

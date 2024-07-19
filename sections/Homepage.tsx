@@ -26,6 +26,9 @@ export default function Homepage() {
             <Visit/>
         </div>
         <hr/>
+        <div className='w-full flex'>
+            <Review/>
+        </div>
     </div>
   )
 }

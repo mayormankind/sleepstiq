@@ -10,7 +10,6 @@ module.exports = {
   theme: {
     extend: {
       backdropFilter: ['responsive'],
-      backdropFilter: ['responsive','focus', 'hover', 'active'],
       colors:{
         grayText: '#12305B',
         blueShade: '#12305B',

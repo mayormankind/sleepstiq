@@ -14,8 +14,8 @@ export default function Mission() {
           <li>✔ Aid Relaxation</li>
         </ul>
       </div>
-      <div className="relative w-full md:w-1/2 h-96 md:h-auto">
-        <Image src='/mission.png' alt='relaxed woman in a comfy bed' layout='fill' objectFit='cover' className='w-full h-full' />
+      <div className="flex w-full md:w-1/2 h-96 md:h-auto">
+        <Image src='/mission.png' alt='relaxed woman in a comfy bed' layout='fill' objectFit='cover' width={500} height={500} className='w-full h-full'/>
       </div>
     </div>
   );

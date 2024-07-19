@@ -29,17 +29,17 @@ const settings = {
 };
 
 return (
-<div className='w-full h-full min-h-screen '>
+<div className='w-full h-full min-h-screen'>
     <Header page={'About'}/>
     <div className='w-full h-full relative grid'>
-      <Image src={'/product.png'} alt='hero background' layout='fill' objectFit='cover' className='w-full h-full absolute top-0 left-0'/>        
-        <div className="w-full max-w-5xl mx-auto p-4 lg:p-0">
+      <Image src={'/product2.png'} alt='hero background' layout='fill' objectFit='cover' className='w-full h-full absolute top-0 left-0'/>        
+        <div className="w-full max-w-4xl mx-auto p-4 lg:p-0">
             <div className="flex w-full h-screen">
                 <div className="flex z-10 flex-col gap-6 h-fit text-[#12305B] my-auto items-start text-sm w-full md:w-1/2">
                     <p className="text-sm">We are here to help you</p>
                     <h2 className='font-bold text-2xl md:text-3xl'>Our Product</h2>
                     <span className=''>With the aid of our Melatonin Sleepstiq, we can assure you that you can get quality sleep.</span>
-                    <button className='bg-[#FC5959] p-3 w-1/4 font-semibold text-white rounded-md'>
+                    <button className='bg-[#FC5959] p-3 w-2/4 lg:w-1/4 font-semibold text-white rounded-md'>
                        <Link href='/shop'>Visit shop</Link>
                     </button>
                 </div>
@@ -55,7 +55,7 @@ return (
         </Slider> */}
     </div>
     <div className='w-full h-full flex py-16 px-4 md:px-0 text-blueShade'>
-      <div className='w-full h-full flex flex-col gap-4 max-w-5xl mx-auto'>
+      <div className='w-full h-full flex flex-col gap-4 max-w-4xl mx-auto'>
       <div>
         <h2 className='text-lg font-semibold'>About SleepStiq</h2>
        <p>At SleepStiq, we believe in the power of restful sleep. Our mission is to provide you with the tools you need to achieve the best sleep possible, because we know that a good nights sleep is the foundation for a productive and healthy life. Our flagship product, the SleepStiq Personal Diffuser, is an innovative solution designed to promote calm, support sleep, reduce stress, and aid relaxation.</p>

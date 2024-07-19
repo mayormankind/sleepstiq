@@ -48,9 +48,9 @@ export default function Product() {
                         </div>
                     </div>
                 </div>
-                <Link href='www.flutterwave.com'>
+                <a href='www.flutterwave.com'>
                     <button className='bg-pinkShade p-3 w-1/2 md:w-1/3 font-semibold text-white rounded-md'>Buy</button>
-                </Link>
+                </a>
             </div>
         </div>
     </div>

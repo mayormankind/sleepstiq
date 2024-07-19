@@ -36,7 +36,7 @@ export default function Footer() {
                     <h2 className="font-semibold text-white mb-4">CONTACT</h2>
                     <ul className='space-y-2 text-[#ABABAB]'>
                         <li>Phone</li>
-                        <li className='text-white hover:border-b-2 border-white w-fit'><Link href='tel:+2347085073128'>+234 708 507 3128</Link></li>
+                        <li className='text-white hover:border-b-2 border-white w-fit'><a href='tel:+2347085073128'>+234 708 507 3128</a></li>
                         <li>Address</li>
                         <li className='text-white hover:border-b-2 border-white'>16, Ogindipe Close, Upston  Close</li>
                     </ul>
@@ -57,9 +57,9 @@ export default function Footer() {
                         <li className='text-white font-bold text-xl'><a href="mailto:info.webovio@gmail.com">hello@sleepstiq.com</a></li>
                         <div className="flex gap-4 items-center">
                             {Contacts.map((contact,id)=>(
-                                <Link key={id} href={contact.ref}>
+                                <a key={id} href={contact.ref}>
                                     <Image src={contact.img} width={6} height={6} alt={contact.alt} className='w-6 h-6'/>
-                                </Link>
+                                </a>
                             ))}
                         </div>
                     </ul>

@@ -17,7 +17,6 @@ export default function Mission() {
       <div className="flex w-full md:w-1/2">
         <Image src='/mission.png' alt='relaxed woman in a comfy bed' layout='responsive' width={500} height={500} className='w-full h-full'/>
       </div>
-      
     </div>
   );
 }

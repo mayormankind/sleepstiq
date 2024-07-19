@@ -33,7 +33,6 @@ export default function Hero(){
         <Header page={'Home'}/>
         <div className='w-full h-full relative grid'>
             <Image src={'/hero.png'} alt='hero background' objectFit='cover' className='w-full h-full absolute top-0 left-0'/>
-            {/* <img src="/hero.png" alt="" className='w-full h-full absolute top-0 left-0 object-cover'/>             */}
             <div className="w-full max-w-4xl mx-auto p-4 lg:p-0">
                 <div className="flex w-full h-screen">
                     <div className="flex z-10 flex-col gap-6 h-fit text-[#12305B] my-auto items-start text-sm w-full md:w-1/2">
@@ -41,7 +40,7 @@ export default function Hero(){
                         <h2 className='font-bold text-2xl md:text-3xl'>Relax & Rest</h2>
                         <span className=''>With the aid of our Melatonin Sleepstiq, we can assure you that you can get quality sleep.</span>
                         <button className='bg-pinkShade p-3 w-2/4 lg:w-1/4 font-semibold text-white rounded-md'>
-                               <Link href='/shop'>Visit shop</Link>
+                            <Link href='/shop'>Visit shop</Link>
                         </button>
                     </div>
                     <div className="hidden md:flex w-full md:w-1/2"></div>

@@ -39,10 +39,10 @@ export default function Hero(){
                     <div className="flex z-10 flex-col gap-6 h-fit text-[#12305B] my-auto items-start text-sm w-full md:w-1/2">
                         <p className="text-sm">We are here to help you</p>
                         <h2 className='font-bold text-2xl md:text-3xl'>Relax & Rest</h2>
-                        <span className=''>With the aid of our Melatonin Sleepstiq, we can assure you that you can get quality sleep.</span>  
-                        <Link href='/shop'>
-                            <button className='bg-pinkShade p-3 w-1/4 font-semibold text-white rounded-md'>Visit shop</button>
-                        </Link>
+                        <span className=''>With the aid of our Melatonin Sleepstiq, we can assure you that you can get quality sleep.</span>
+                        <button className='bg-pinkShade p-3 w-1/4 font-semibold text-white rounded-md'>
+                               <Link href='/shop'>Visit shop</Link>
+                        </button>
                     </div>
                     <div className="hidden md:flex w-full md:w-1/2"></div>
                 </div>            

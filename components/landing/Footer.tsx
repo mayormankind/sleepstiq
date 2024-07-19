@@ -13,11 +13,11 @@ export default function Footer() {
     ]
 
     const Contacts = [
-        {img:"/facebookIcon.png", alt:"facebook icon", ref:'facebook.com'},
-        {img:"/twitterIcon.png", alt:"twitter icon", ref:'twitter.com'},
-        {img:"/googleIcon.png", alt:"google icon", ref:'mailto:mayowamakinde23@gmail.com'},
-        {img:"/linkedin.png", alt:"linkedIn icon", ref:'linkedIn.com'},
-    ]
+        { img: "/facebookIcon.png", alt: "facebook icon", ref: 'https://www.facebook.com' },
+        { img: "/twitterIcon.png", alt: "twitter icon", ref: 'https://www.twitter.com' },
+        { img: "/googleIcon.png", alt: "google icon", ref: 'mailto:mayowamakinde23@gmail.com' },
+        { img: "/linkedin.png", alt: "linkedIn icon", ref: 'https://www.linkedin.com' },
+    ];
 
   return (
     <div className='w-full h-full flex py-10 bg-blueShade text-[#ABABAB]'>
@@ -57,8 +57,8 @@ export default function Footer() {
                         <li className='text-white font-bold text-xl'><a href="mailto:info.webovio@gmail.com">hello@sleepstiq.com</a></li>
                         <div className="flex gap-4 items-center">
                             {Contacts.map((contact,id)=>(
-                                <a key={id} href={contact.ref}>
-                                    <Image src={contact.img} width={6} height={6} alt={contact.alt} className='w-6 h-6'/>
+                                <a key={id} href={contact.ref} target='_blank' rel='noopener noreferrer'>
+                                    <Image src={contact.img} width={24} height={24} alt={contact.alt} className='w-6 h-6'/>
                                 </a>
                             ))}
                         </div>

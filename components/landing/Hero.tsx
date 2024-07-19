@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import Header from './Header';
 import Image from 'next/image'
+import Link from 'next/link'
 import Sponsors from './Sponsors';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -38,8 +39,10 @@ export default function Hero(){
                     <div className="flex z-10 flex-col gap-6 h-fit text-[#12305B] my-auto items-start text-sm w-full md:w-1/2">
                         <p className="text-sm">We are here to help you</p>
                         <h2 className='font-bold text-2xl md:text-3xl'>Relax & Rest</h2>
-                        <span className=''>With the aid of our Melatonin Sleepstiq, we can assure you that you can get quality sleep.</span>
-                        <button className='bg-pinkShade p-3 w-1/4 font-semibold text-white rounded-md'>Visit shop</button>
+                        <span className=''>With the aid of our Melatonin Sleepstiq, we can assure you that you can get quality sleep.</span>  
+                        <Link href='/shop'>
+                            <button className='bg-pinkShade p-3 w-1/4 font-semibold text-white rounded-md'>Visit shop</button>
+                        </Link>
                     </div>
                     <div className="hidden md:flex w-full md:w-1/2"></div>
                 </div>            

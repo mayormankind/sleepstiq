@@ -34,7 +34,7 @@ export default function Shop() {
   <div className='w-full h-full min-h-screen overflow-hidden'>
     <Header page={'Shop'}/>
     <div className='w-full h-full relative grid'>
-      <Image src={'/shopHero.png'} alt='hero background' layout='fill' objectFit='cover' className='w-full h-full absolute top-0 left-0'/>       
+      <Image src={'/shopHero.png'} alt='hero background' layout='fill' objectFit='cover' width={1000} height={1000} className='w-full h-full absolute top-0 left-0'/>       
       <div className="w-full max-w-4xl mx-auto p-4 lg:p-0">
         <div className="flex w-full min-h-[600px]">
           <div className="flex z-10 flex-col gap-6 h-fit text-[#12305B] my-auto items-start text-sm w-full md:w-1/2">

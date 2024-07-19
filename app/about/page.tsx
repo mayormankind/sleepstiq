@@ -4,6 +4,7 @@ import React from 'react'
 import Slider from 'react-slick';
 import Image from 'next/image';
 import Header from '@/components/landing/Header'
+import Link from 'next/link';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -38,7 +39,9 @@ return (
                     <p className="text-sm">We are here to help you</p>
                     <h2 className='font-bold text-2xl md:text-3xl'>Our Product</h2>
                     <span className=''>With the aid of our Melatonin Sleepstiq, we can assure you that you can get quality sleep.</span>
-                    <button className='bg-[#FC5959] p-3 w-1/4 font-semibold text-white rounded-md'>Visit shop</button>
+                    <button className='bg-[#FC5959] p-3 w-1/4 font-semibold text-white rounded-md'>
+                       <Link href='/shop'>Visit shop</Link>
+                    </button>
                 </div>
                 <div className="hidden md:flex w-full md:w-1/2"></div>
             </div>            

@@ -11,7 +11,7 @@ export default function ReviewCard({ review, author }: reviewProps) {
                 <p className='italic'>{review}</p>
                 <div className='flex flex-col'>
                     <b>{author}</b>
-                    <span>* * * * *</span>
+                    <span>⭐ ⭐ ⭐ ⭐ ⭐</span>
                 </div>
         </div>
     </div>
